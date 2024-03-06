@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu primeiro programa</title>
+
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            background-color: rgb(170, 86, 239);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 6em;
+            color: rgb(153, 238, 154);
+        }
+
+        div{
+            width: max-content;
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <h1>Olá!</h1>
+        <p>Vamos ser amigos?</p>
+    </div>
+    <script>
+        
+        var nome = window.prompt('Qual o seu nome?')
+        window.alert('É um grande prazer te conhecer, ' + nome + '!')
+
+    </script>
+
+</body>
+</html>
