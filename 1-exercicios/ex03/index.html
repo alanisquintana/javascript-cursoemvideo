@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Trabalhando variáveis</title>
+
+    <style>
+
+        *{
+            margin: 0;
+        }
+
+        body{
+            background-color: rgb(128, 235, 230);
+            color: white;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        h1{
+            font-size: 7em;
+            color: rgb(153, 154, 238);
+        }
+
+        div{
+            width: max-content;
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <h1>F5</h1>
+        <p>Para fazer outras contas</p>
+    </div>
+    <script>
+
+        /* 
+        Também é possível utilizar:
+         Number.parseInt (Números inteiros)
+         Number.parseFloat (Números quebrados)
+        O Number identifica sozinho se o número oferecido é inteiro ou quebrado.
+        */
+        var n1 = Number(window.prompt('Digite um número: '))
+
+        var n2 = Number(window.prompt('Digite outro número: '))
+
+        /*
+        Para converter de Number para String, basta escrever String(dado dentro dos parentesês).
+        Exemplos:
+         var n1 = String(window.prompt('Digite um número: '))
+         window.alert('A soma dos valores é' + String(s))
+        */
+
+        var s = n1 + n2
+
+        window.alert(`A soma entre ${n1} e ${n2} é igual a ${s}`) 
+        /*
+        (number + number) adição
+        (string + string) concatenação
+        */
+
+    </script>
+
+</body>
+</html>
