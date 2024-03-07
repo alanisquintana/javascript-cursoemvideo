@@ -13,16 +13,21 @@
         }
 
         body{
-            background-color: rgb(180, 128, 235);
-            color: rgb(157, 238, 153);
+            background-color: rgb(243, 241, 245);
+            color: rgb(29, 29, 29);
             font-family: Arial, Helvetica, sans-serif;
-            text-align: center;
+            text-align: left;
             font-weight: bolder;
             font-size: 2em;
             height: 100vh;
-            display: flex;
+            display: grid;
             align-items: center;
             justify-content: center;
+        }
+
+        p{
+            font-size: 3em;
+            color: blue;
         }
 
     </style>
@@ -30,17 +35,19 @@
 </head>
 <body>
 
+    <p>:)</p>
 
     <script>
 
         var nome = window.prompt('Qual o seu nome?')
         
-        document.write(`Olá, ${nome}! <br> Seu nome tem ${nome.length} letras.<br>`)
+        document.write(`Olá, ${nome}! <br><br> Seu nome tem ${nome.length} letras.<br>`)
 
         document.write(`Seu nome em maiúsculas é ${nome.toUpperCase()}.<br>`)
         
         document.write(`Seu nome em minúsculas é ${nome.toLowerCase()}.`)
 
     </script>
+
 </body>
 </html>
