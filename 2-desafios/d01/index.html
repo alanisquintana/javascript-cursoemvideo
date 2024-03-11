@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mensagens</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(243, 241, 245);
+        }
+
+        h1{
+            position: fixed;
+            top: 35vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            color: #8355e5;
+        }
+
+        button{
+            margin: 5px;
+            width: 100px;
+            height: 60px;
+            font-weight: 600;
+            color: #646464;
+            background-color: #efefef;
+            border: 1.6px solid #00000022;
+            border-radius: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+        p{
+            position: fixed;
+            top: 57vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            font-family: ;
+            font-size: 10px;
+            color: #0000004f;
+            letter-spacing: 2px;
+            text-transform: lowercase;
+        }
+
+        #botoes{
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+        button:active{
+            background-color: #8355e5;
+            color: white;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Desafio das Mensagens</h1>
+
+    <div id="botoes">
+        <button onclick="botao1()">1</button>
+        <button onclick="botao2()">2</button>
+        <button onclick="botao3()">3</button>
+    </div>
+
+    <p>Clique em qualquer botão</p>
+
+    <script>
+
+        function botao1(){
+        alert('Você clicou no 1º botão!')
+        }
+        function botao2(){
+        alert('Você clicou no 2º botão!')
+        }
+        function botao3(){
+        alert('Você clicou no 3º botão!')
+        }
+        
+    </script>
+    
+</body>
+</html>
