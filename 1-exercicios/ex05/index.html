@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Primeiros passos com DOM</title>
+
+    <style>
+        
+        body{
+            background-color: rgb(37, 37, 49);
+            color: rgb(228, 228, 228);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        main{
+            width: max-content;
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+        
+
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <p>1</p>
+        <p>2</p>
+        <div id="msg">3</div>
+    </main>
+
+    <script>
+
+        var p1 = window.document.getElementsByTagName('p')[0]
+        p1.innerText = 'Olá!'
+        p1.style.fontSize = '4em'
+
+        var p2 = window.document.getElementsByTagName('p')[1];
+        p2.innerHTML = 'Estou aprendendo a usar o <strong>DOM</strong>, e <br> essas são mensagens modificadas usando Javascript'
+        p2.style.fontSize = '1.4em'
+
+        var d = window.document.querySelector('div#msg')
+        d.innerText = 'Cheque o código fonte'
+        d.style.color = 'rgb(117, 153, 232)'
+
+    </script>
+    
+</body>
+</html>
