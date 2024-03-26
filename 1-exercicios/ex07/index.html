@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Somando números</title>
+
+    <style>
+
+        body{
+            background-color: rgb(37, 37, 49);
+            color: rgb(228, 228, 228);
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+        }
+
+        main{
+            width: max-content;
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+        h1{
+            margin: 50px;
+            font-size: 35px;
+            color: #75e890;
+        }
+
+            input#txtn1, input#txtn2{
+                font: bold 20px Arial, Helvetica, sans-serif;
+                color: #64c97b;
+                border-radius: 20px;
+                width: 180px;
+                height: 40px;
+                padding: 0 15px;
+            }
+
+        input#botao{
+            background-color: #75e890;
+            color: white;
+            border-radius: 40px;
+            width: 40px;
+            height: 40px;
+        }
+
+        div#res{
+            margin: 30px;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <h1>Somando Valores</h1>
+        <input type="number" name="txtn1" id="txtn1">
+        +
+        <input type="number" name="txtn2" id="txtn2">
+        <input id="botao" type="button" value="=" onclick="somar()">
+        <div id="res"></div>
+    </main>
+
+    <script>
+
+         function somar() {
+            var tn1 = window.document.getElementById('txtn1')
+            var tn2 = window.document.getElementById('txtn2')
+            var res = window.document.getElementById("res")
+            var n1 = Number(tn1.value)
+            var n2 = Number(tn2.value)
+            var s = n1 + n2
+            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+         } 
+
+    </script>
+    
+</body>
+</html>
