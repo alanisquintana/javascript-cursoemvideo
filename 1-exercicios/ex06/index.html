@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos DOM</title>
+
+    <style>
+
+        body{
+            background-color: rgb(243, 241, 245);
+        }
+
+        main{
+            width: max-content;
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+        }
+
+        div#area{
+            font: normal 2em Arial, Helvetica, sans-serif;
+            background-color: #6c76e1;
+            color: white;
+            width: 200px;
+            height: 200px;
+            text-align: center;
+            line-height: 200px;
+            border-radius: 100px;
+        }
+
+        div#area > p{
+            margin: 0;
+            padding: 0;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <main>
+        <div id="area">
+            <p>Interaja!</p>
+        </div>
+    </main>
+
+    <script>
+
+        var area = window.document.getElementById('area')
+
+        area.addEventListener('click', clicar)
+        area.addEventListener('mouseenter', entrar)
+        area.addEventListener('mouseout', sair)
+        area.addEventListener('mousedown', segurar)
+
+
+
+        function clicar(){
+            area.innerText = 'Clicou!'
+            area.style.backgroundColor = '#F0F048'
+        }
+
+        function entrar(){
+            area.innerText = 'Entrou!'
+            area.style.backgroundColor = '#7CFF4D'
+        }
+
+        function sair(){
+            area.innerText = 'Saiu!'
+            area.style.backgroundColor = '#6c76e1'
+        }
+
+        function segurar(){
+            area.innerText = 'Segurou!'
+            area.style.backgroundColor = '#FF7D90' 
+        }
+
+        
+    </script>
+    
+</body>
+</html>
