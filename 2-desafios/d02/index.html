@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Boas-vindas</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #252531;
+            color: rgb(228, 228, 228);
+        }
+
+        h1{
+            position: fixed;
+            top: 35vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            font-size: 50px;
+            width: max-content;
+            color: white;
+        }
+
+        button{
+            position: fixed;
+            top: 55vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            margin: 10px;
+            padding: 20px;
+            font-size: 15px;
+            font-weight: 600;
+            color: white;
+            background-color: #7aa6e4;
+            box-shadow: -5px 5px 10px #0d0d12;
+            border: 0px solid #e0e0e0;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Seja bem-vindo!</h1>
+
+    <button onclick="cliqueaqui()">Clique aqui</button>
+
+    <script>
+
+        function cliqueaqui() {
+            var nome = prompt('Qual é o seu nome?')
+            var idade = prompt('Olá, '+ nome +'! Quantos anos você tem?')
+            alert('Acabei de conhecer '+ nome +', que tem '+ idade +' anos de idade! ')
+        }
+
+    </script>
+    
+</body>
+</html>
