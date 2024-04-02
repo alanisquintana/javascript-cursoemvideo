@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Troco</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #252531;
+            color: rgb(228, 228, 228);
+        }
+
+        button{
+            position: fixed;
+            top: 50vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            margin: 10px;
+            padding: 20px;
+            font-size: 25px;
+            font-weight: 600;
+            color: white;
+            background-color: #7a83e4;
+            box-shadow: -5px 5px 10px #0d0d1264;
+            border: 0px solid #e0e0e0;
+            border-radius: 10px;
+            text-transform: uppercase;
+        }
+
+        button:active{
+            background-color: #7a83e4;
+            color: white;
+            box-shadow: inset -5px 5px 10px #0d0d1264;}
+
+    </style>
+
+</head>
+<body>
+
+    <button onclick="calcular()">Calcular Troco</button>
+
+    <script>
+
+        function calcular(){
+            var produto = prompt('Que produto você está comprando?')
+
+            var precoStr = prompt('Quanto custa esse(a) '+ produto +' que você está comprando?').replace(',', '.')
+
+            var pagamentoStr = prompt('Qual foi o valor que você deu para pagar esse(a) '+ produto +'?').replace(',', '.')
+
+            var preco = Number(precoStr)
+            var pagamento = Number(pagamentoStr)
+
+
+            var troco = pagamento - preco
+
+            let precoFormatado = preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            let pagamentoFormatado = pagamento.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+            let trocoFormatado = troco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+
+            alert('Você comprou '+ produto +' que custou '+ precoFormatado +'. Deu '+ pagamentoFormatado +' em dinheiro e vai receber '+ trocoFormatado + ' de troco. Volte sempre!')
+        }
+
+    </script>
+    
+</body>
+</html>
