@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Antes e Depois</title>
+
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(243, 241, 245);
+        }
+
+        h1{
+            position: fixed;
+            top: 36vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            font-size: 42px;
+            font-weight: 700;
+            width: max-content;
+            color: #6f707f;
+        }
+
+        button{
+            position: fixed;
+            top: 55vh;
+            left: 50vw;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            margin: 10px;
+            padding: 20px;
+            font-weight: 600;
+            color: white;
+            background-color: #53dd98;
+            box-shadow: -5px 5px 10px #3b256859;
+            border: 0px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 20px;
+            text-transform: uppercase;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <h1>Antecessor/Sucessor</h1>
+
+    <button onclick="cliqueaqui()">Clique aqui</button>
+
+    <script>
+
+        function cliqueaqui(){
+            var numero = Number(prompt('Digite um número inteiro qualquer'))
+            var antecessor = numero - 1
+            var sucessor = numero + 1
+            alert('Antes de '+ numero +' temos o número '+ antecessor+'. Depois de '+ numero +', temos o número '+ sucessor +'.')
+        }
+
+    </script>
+    
+</body>
+</html>
