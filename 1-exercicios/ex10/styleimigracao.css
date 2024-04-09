@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(243, 241, 245);
+}
+
+h1 {
+    width: max-content;
+    position: fixed;
+    top: 35vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+    color: rgb(120, 131, 226);
+    font-size: 2em;
+}
+
+main{
+    width: max-content;
+    position: fixed;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -50%);
+}
+
+input#país {
+    font-size: 1em;
+    width: 200px;
+    height: 6px;
+    padding: 15px;
+    color: rgb(120, 131, 226);
+    border: 1px solid rgba(0, 0, 0, 0.267);
+    border-radius: 40px;
+}
+
+input#ok {
+    background-color: rgb(120, 131, 226);
+    font-size: 1em;
+    color: white;
+    padding: 6px;
+    border: 1px solid rgb(120, 131, 226);
+    border-radius: 20px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.153);
+}
+input#ok:active {
+    box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.153);
+}
+
+div#res{
+    position: fixed;
+}

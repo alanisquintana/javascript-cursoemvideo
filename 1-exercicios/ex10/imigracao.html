@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="styleimigracao.css">
+
+    <title>Imigração</title>
+
+</head>
+<body>
+
+    
+    <h1>Em qual país você nasceu?</h1>
+
+    <main>
+        <input type="text" id="país">
+        <input type="button" value="Ok" id="ok" onclick="verificar()">
+        <div id="res"></div>
+    </main>
+
+    <script>
+
+        function verificar() {
+            var paísInput = document.getElementById('país')
+            var país = paísInput.value
+            
+            var res = document.getElementById('res')
+
+            res.innerHTML = `<p style="margin-top: 40px">Você é do país ${país}...</p>`
+
+            if (país == "Brasil") {
+                res.innerHTML += '<p style="color: rgb(86, 97, 197);"><strong>Você é brasileiro!</strong></p>'
+            }
+
+            if (país != "Brasil") {
+                res.innerHTML += '<p><strong>Você é estrangeiro!</strong></p>'
+            }
+        }
+
+    </script>
+    
+</body>
+</html>
