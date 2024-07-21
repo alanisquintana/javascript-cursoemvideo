@@ -5,16 +5,14 @@
 
 # Curso de JavaScript (CursoemVídeo)
 
-### Bem-vindo(a) 
-
-Seja muito bem vindo(a) ao repositório dedicado ao registro do meu **primeiro contato** com a Programação, por meio do curso de _JavaScript_ ministrado pelo _Professor Gustavo Guanabara_ do _CursoemVídeo_.
+Esse repositório é dedicado ao registro do meu **primeiro contato** com a Programação, por meio do curso de _JavaScript_ ministrado pelo _Professor Gustavo Guanabara_ do _CursoemVídeo_.
 
 </br>
 
 ## Estrutura do repositório
 
-- **1-Exercícios:** Contém todos os exercícios realizados por mim durante as aulas, de acordo com as instruções do _Professor Gustavo Guanabara_.
-- **2-Desafios:** Esta seção contém todos os desafios concluídos por mim ao longo dos módulos do curso, propostos pelo _Professor Gustavo Guanabara_.
+- **1-exercicios:** Contém todos os exercícios realizados por mim durante as aulas, de acordo com as instruções do _Professor Gustavo Guanabara_.
+- **2-desafios:** Esta seção contém todos os desafios concluídos por mim ao longo dos módulos do curso, propostos pelo _Professor Gustavo Guanabara_.
   
 </br>
 
@@ -37,16 +35,14 @@ Seja muito bem vindo(a) ao repositório dedicado ao registro do meu **primeiro c
 
 # JavaScript Course (CursoemVídeo)
 
-## Welcome
-
-Welcome to the repository dedicated to documenting my **first experience** with Programming, through the _JavaScript_ course taught by _Professor Gustavo Guanabara_ from _CursoemVídeo_.
+This repository is dedicated to documenting my **first experience** with Programming, through the _JavaScript_ course taught by _Professor Gustavo Guanabara_ from _CursoemVídeo_.
 
 </br>
 
 ## Repository Structure
 
-- **1-Exercises:** Contains all exercises completed by me during the classes, following _Professor Gustavo Guanabara_'s instructions.
-- **2-Challenges:** This section contains all challenges completed by me throughout the course modules, proposed by _Professor Gustavo Guanabara_.
+- **1-exercicios:** Contains all exercises completed by me during the classes, following _Professor Gustavo Guanabara_'s instructions.
+- **2-desafios:** This section contains all challenges completed by me throughout the course modules, proposed by _Professor Gustavo Guanabara_.
 
 </br>
 
